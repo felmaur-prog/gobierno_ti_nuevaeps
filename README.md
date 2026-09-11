@@ -12,7 +12,7 @@ Proyecto del curso **Gerencia y Gobierno de TI** (Maestría en Analítica Aplica
 
 ## Pregunta analítica (SMART)
 
-¿En qué magnitud y con qué heterogeneidad territorial se asocian las fallas del proceso de cuentas médicas de Nueva EPS (aproximadas por el flujo de giro directo a prestadores) con el deterioro del acceso de sus afiliados (tasa mensual de PQRD por cada 1.000 afiliados), en los 32 departamentos y Bogotá, entre enero de 2022 y junio de 2026, y qué departamentos y prestadores deberían priorizarse en el plan de saneamiento?
+¿En qué magnitud y con qué heterogeneidad territorial se asocian las fallas del proceso de cuentas médicas de Nueva EPS (aproximadas por el flujo de giro directo a prestadores) con el deterioro del acceso de sus afiliados (tasa mensual de PQRD por cada 1.000 afiliados), en los 32 departamentos y Bogotá, entre enero de 2022 y diciembre de 2025, y qué departamentos y prestadores deberían priorizarse en el plan de saneamiento?
 
 ## Fuentes de datos
 
@@ -46,7 +46,9 @@ gobierno_ti_nuevaeps/
 
 ## Pipeline
 
-Ingesta -> limpieza y validación -> integración (panel departamental mensual) -> modelado (series de tiempo interrumpidas, diferencias en diferencias, regresión de panel, índice de priorización) -> validación (placebos, sensibilidad, auditoría de sesgo).
+Ingesta -> limpieza y validación -> integración (panel por EPS y mes, 2019 a 2026, y panel departamental mensual, 2022 a 2025) -> modelado (series interrumpidas y diferencias en diferencias a nivel EPS; regresión de panel e índice de priorización a nivel departamental) -> validación (placebos, sensibilidad, auditoría de sesgo).
+
+Estado de la evaluación de fuentes (12 de septiembre de 2026): 6.574.638 PQRD procesadas (Nueva EPS 2025: 518.191 frente a 518.211 de la Contraloría); 909.129 registros de giro directo de Nueva EPS, 87 % georreferenciados por NIT con el REPS; 11.278.956 afiliados de Nueva EPS en el BDUA. El giro contributivo por prestador solo es masivo desde 2024 y el subsidiado por prestador termina en octubre de 2024; la serie subsidiada por EPS (2019 a 2026) es la única continua a través de la intervención.
 
 Ver `docs/figuras/pipeline.png`.
 
