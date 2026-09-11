@@ -75,8 +75,7 @@ Siete semanas, del 31 de agosto al 18 de octubre de 2026: Unidad 1 (31 de agosto
 
 ## Equipo
 
-* Felix Mauricio Campo Ariza (@felmaur-prog): líder de proyecto, diagnóstico organizacional, ciencia de datos y repositorio.
-* Pablo Andrés Toledo Lugo: marcos de referencia (COBIT 2019, ITIL 4, MGGTI), cumplimiento normativo, reflexión ética (NIST AI RMF, ODS 9.b), diseño del modelo de gobierno y presentación ejecutiva.
+* Felix Mauricio Campo Ariza (@felmaur-prog) y Pablo Andrés Toledo Lugo: diagnóstico organizacional, ciencia de datos y repositorio, marcos de referencia (COBIT 2019, ITIL 4, MGGTI), cumplimiento normativo, reflexión ética (NIST AI RMF, ODS 9.b), diseño del modelo de gobierno y presentación ejecutiva.
 
 ## Licencia
 
